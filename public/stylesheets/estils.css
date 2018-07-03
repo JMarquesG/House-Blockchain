@@ -1,0 +1,134 @@
+html{
+	font-family: Calibri;
+	font-size:	0.9em;
+}
+body {
+	margin-top: 0%;
+	overflow: hidden;
+	background-color: #f2f9ff;
+	width: 100%;
+	height: 100%;
+}
+h1 {
+	font-size:	1.4em;
+	color: #36413e;
+}
+hr {
+	border: 0;
+  	border-top: 1px solid ;
+}
+a.barra {
+	color: #20352f;
+	text-decoration: none;
+}
+a.barra:hover {
+	color: #ffffff;
+}
+p.text-petit {
+	color: #a3a5a7;
+}
+p {
+	margin: 0em;
+}
+p.text-normal {
+	color: #36413e;
+}
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #36413e;
+	color: #06110e;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 1px;
+	margin-bottom: 1%;
+}
+nav {
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+td, th {
+	border: 1px solid Gray;
+	padding: 1%;
+	text-align: left;
+}
+th {
+	background-color: LightGray;
+}
+aside {
+	position:fixed;
+	margin-left:10%;
+	background-color:#007eaf;
+	height:100%;
+	width:12%;
+}
+div {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+article {
+	margin-left: 22%;
+	padding-left: 1%;
+	padding-right: 1%;
+	height: 92%;
+	width: 50%;
+}
+img {
+	max-width: 100%;height: auto;
+}
+input.cerca {
+	border: 1px solid DimGray;
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width:75%;
+	margin-left: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+input.form {
+	border: 1px solid DimGray;
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width:25%;
+	margin-left: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+input.add {
+	border: 1px solid DimGray;
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	width:92%;
+	margin-left: 2%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+li.barra:hover::before {
+    content: ">";
+    padding-right: 4px;
+}
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 5%;
+	text-align: center;
+	margin-left: 10.6%;
+	width: 80%;
+	background-color: color: #36413e;
+	color: #06110e;
+}

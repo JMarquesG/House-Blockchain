@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    h1(style="padding-top: 2%;") Transaccions: #{type}
+    table
+        each elem, i in headers
+            tr
+                td(style="width: 15%;background-color: LightGray;")=elem
+                td=value[i]
+    if type == "Casa" && value[4]
+        form(method="POST", action="/detail?validate=compra")
+            input(type="hidden", name="id_casa", value="#{value[0]}")
+            input(type="submit", value="Validar Compravenda")
+    if type == "Casa" && value[5]
+        form(method="POST", action="/detail?validate=herencia")
+            input(type="hidden", name="id_casa", value="#{value[0]}")
+            input(type="submit", value="Validar Herencia")

@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        title PAE-Altran
+        link(rel='stylesheet', href='stylesheets/estils.css')
+        script(src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js")
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=0.5")
+    body
+      div
+        aside
+            header(style="background: inherit;")
+                a(href="/"): img(style="margin-top: 9%;" src="images/Logo_upc.png" width="80%" height="80%")
+                a(href="/"): img(src="images/Altran_Logo.png" width="80%" height="80%" style="margin-top: 9%;")
+            hr
+            ul(style="list-style-type: none; padding:0;")
+                if cookieAddress
+                    li(class="barra"): a(class="barra", href="/add?type=propietat", style="padding: 5%;") Afegir propietat
+                    li(class="barra"): a(class="barra", href="/add?type=compra", style="padding: 5%;") Afegir compravenda
+                    li(class="barra"): a(class="barra", href="/add?type=herencia", style="padding: 5%;") Afegir herencia
+                li(class="barra"): a(class="barra", href="/list?type=transaccions", style="padding: 5%;") Totes les transaccions
+                li(class="barra"): a(class="barra", href="/list?type=propietats", style="padding: 5%;") Totes les propietats
+        article
+            h1 Servei de registre de propietats
+            nav: a(href="/" class="barra") Home
+            hr
+            p(class="text-petit", id="address", style="float: left;")
+            a(id="login", href="login", style="float: right;") Log in
+            a(id="sessionContent", href="/", onclick="Cookies.remove('addressAccount')", style="float: right;") Log out
+            block content
+        footer: c Copyright&copy UPC, FIB, PAE
+        script
+                | document.getElementById("address").textContent = Cookies.get('addressAccount') || "0x0";
+                | if (Cookies.get('addressAccount') == undefined) {
+                |     document.getElementById("sessionContent").hidden = true;
+                |     document.getElementById("address").hidden = true;
+                |     document.getElementById("login").hidden = false;
+                | } else {
+                |     document.getElementById("sessionContent").hidden = false;
+                |     document.getElementById("address").hidden = false;
+                |     document.getElementById("login").hidden = true;
+                | }

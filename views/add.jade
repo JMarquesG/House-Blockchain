@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1(style="padding-top: 2%;") Afegir #{type}
+    form(method="POST", action="/add")
+        input(type="hidden", name="type", value="#{type}")
+        table
+            each header, i in headers
+                tr
+                    td(style="width: 15%;background-color: LightGray;"): p(class="text-normal")= header
+                    td: input(autocomplete="off" class="add" type="text", name="#{properties[i]}" autofocus required)
+        br
+        input(type="submit" value="Afegir")

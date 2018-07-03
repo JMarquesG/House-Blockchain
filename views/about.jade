@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1(style="padding-top: 2%;") About
+    ul
+        for name in names
+            li: p(class="text-normal", style="font-size: 1.4em;")= name

@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1(style="padding-top: 2%;") Log in
+    form(autocomplete="off" method="POST")
+        p(class="text-normal") Usuari:
+        input(class="form" type="text", name="user" autofocus required)
+        p(class="text-normal") Contrasenya:
+        input(class="form" type="password" name="pwd" required)
+        br
+        input(type="submit")

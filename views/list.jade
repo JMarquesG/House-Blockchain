@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    h1(style="padding-top: 2%;") Transaccions: #{type}
+    table
+        tr
+            each elem, i in headers
+                th=elem
+        for elem in values
+            tr
+            each val, i in elem
+                if name && i == 0
+                    td: a(href="/detail?type=#{name}&address=#{val}")= val
+                else
+                    td=val

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1(style="padding-top: 2%;") Cerca
+    p(class="text-normal") Cerca aquí una propietat:
+    form(autocomplete="off" method="GET", action="/list", onkeypress="if (event.keyCode === 13) submit();")
+        input(id="input", class="cerca" type="text", name="q", placeholder="Cerca...", autofocus, required)
+        input(type="hidden", name="type", value="transactions")
+    br
