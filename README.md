@@ -1,5 +1,6 @@
 # House-Blockchain
 Assignatur PAE-FIB, projecte blockchain pel registre de la vivenda
+
 Como a estudiantes de la FIB matriculados en la asignatura PAE, Altran nos propuso un reto a resolver.
 
 Desafortunadamente, comprar o vender una vivienda nunca ha sido fácil y tampoco rápido. El ciudadano se ve obligado a someterse a un proceso burocrático largo con múltiples intermediarios a la vez, donde hay falta de transparencia y confianza. Además, normalmente el comprador es el más perjudicado, ya que puede adquirir un inmueble con cargas o una propiedad inexistente. El objetivo de este proyecto es solucionar el problema de confianza y transparencia, ofreciendo a los ciudadanos rapidez y fiabilidad en el proceso de compraventa, para así evitar fraudes y engaños, y además ahorrar gastos en intermediarios.
